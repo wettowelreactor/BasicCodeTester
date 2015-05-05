@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!--[if lt IE 9]>
+    <script>
+      (function(){
+        var ef = function(){};
+        window.console = window.console || {log:ef,warn:ef,error:ef,dir:ef};
+      }());
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-sham.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Basic Code Inspection</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="well well-sm">
+          <h3>Alternate Fizz Buzz</h3>
+          <p>Write Fizz Buzz using a while loop. Do not use any For loops.
+          Your while loop should include at least one If statement</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <textarea id="editor" class="form-control" rows=15>Oh My</textarea>
+      </div>
+
+      <div class="row">
+      <!--for basic testing place any rules to check against here
+          Use the MDN parser API for accepted statements. 
+          Preppend a ! to an attribute to check for absence-->
+        <div class="rules well well-sm">
+          <span class="label label-default" data-rule="WhileStatement">Use a While loop</span>
+          <span class="label label-default" data-rule="!ForStatement">Do not use a For loop</span> 
+          <span class="label label-default" data-rule="WhileStatement>IfStatement">Use at least one If statement inside a While loop</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="assets/bundle.js"></script>
+  </body>
+</html>
