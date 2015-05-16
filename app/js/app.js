@@ -30,12 +30,12 @@ var getRules = function() {
 var markRule = function(result, rule) {
   var $span = $('.rules span[data-rule="' + rule + '"]');
   if (result){
-      $span.removeClass('label-default label-warning');
-      $span.addClass('label-success');
-    } else {
-      $span.removeClass('label-success');
-      $span.addClass('label-warning');
-    }
+    $span.removeClass('label-default label-warning');
+    $span.addClass('label-success');
+  } else {
+    $span.removeClass('label-success');
+    $span.addClass('label-warning');
+  }
 };
 
 $(function() {
